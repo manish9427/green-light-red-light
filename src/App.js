@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import UserRegistration from "./components/UserRegistration";
+import GreenLightRedLight from "./components/GreenLightRedLight";
+import "./App.css";
 
 function App() {
+  const [userData, setUserData] = useState(null);
+
+  const handleStartGame = (data) => {
+    setUserData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <header className="header">Green Light/Red Light Game</header>
+      {userData ? (
+        <GreenLightRedLight difficulty={userData.difficulty} />
+      ) : (
+        <div className="main-content">
+          <UserRegistration onStartGame={handleStartGame} />
+        </div>
+      )}
     </div>
   );
 }

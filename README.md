@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+Coding Challenge The Return Journey
+In this coding challenge, you are asked to write a small web game that recreates the iconic
+green light/red light game from Squid Games. The game will display a box that changes color
+between green and red. The goal of the game is to get to n clicks on the green box within y
+seconds.
+You should write all your game logic in the GreenLightRedLight component. By default, it should
+display a button with the text “Start Game.” This button will be used to start the game.
+Evaluation Criteria:
+This Challenge is used to identify the expertise level of the candidate from Beginner to Hard. Do
+not give up as you would be evaluated step-wise. We would recommend you complete the task
+if possible! This will help you stand out from the crowd.
+Steps to be executed in the below-mentioned order:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. User Registration:
+   Collect the following details (being creative has a bonus 🙂)
+   a) Name
+   b) Email
+   c) Mobile Number
+   d) Difficulty Level - Easy, Medium, Hard
+2. Once the button is pressed, your app should display a box that changes its color on a random
+   basis. Ideally, it should change no sooner than 1s and no later than 2s.
+3. If the users click on the red box or if the time has expired, they failed the game and you
+   should display Game Over! message and end the game immediately.
+4. If the users click on the green box, you should increment their score count by 1. If they
+   manage to click the green box n times within y seconds, they win and you should display You
+   win! message.
+   EASY MEDIUM HARD
+   n = 10 n = 15 n = 25
+   y = 40 secs y = 40 secs y = 40 secs
